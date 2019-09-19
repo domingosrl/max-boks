@@ -1,0 +1,100 @@
+
+
+ *{
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+   }
+
+   html,body{
+   	font-family: 'PT Sans', sans-serif;
+   	font-size: 20px;
+   	background:#FFEFD5; 
+   }
+
+   .content{
+   height:50vh; 
+   min-height:500px;
+   position: relative;
+   }
+
+    .hedar{
+    height: 100%;
+    width: 100%;
+    background-image: url(Turkey.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+    }
+
+    .hedar_title{
+    font-size: 150px;
+    color:  #E0FFFF;	
+    }
+
+    .hedar_arrou{
+    padding-top: 100px;
+    }
+
+    .blok_1{
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    color:#000080;
+    text-align: center;
+    padding-top:20px ;
+   
+    }
+
+    .proekt{
+    display: flex;	
+    height:850px;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    
+    }	
+
+    .blok{
+    width: calc((100% - 25px) /3);	
+    }
+
+    .img_td{
+    width:100%;
+    height: 380px;
+    object-fit: cover; 	
+    }
+    .text{
+    text-align:center;
+    }
+
+    .button{
+    font-family: 'Merriweather Sans', sans-serif; 
+    font-size:20px;
+    color:#FFFF00 ;
+    text-decoration: none;
+    display:inline-block;
+
+    border-width:2px;
+    border-color:#FFFF00 ;
+    border-style: solid;
+    border-radius:50px ;
+    padding-top: 10px;
+    padding-bottom:10px ;
+
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+    margin-top:15px;
+    margin-bottom: 20px;
+    }
+
+    a{
+    background: #0000FF;	
+    }
+    a:hover{
+    background: #00FF00; 	
+    }
+
+
+

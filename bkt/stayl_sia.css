@@ -1,0 +1,219 @@
+
+html ,body{  /* Шрифт*/
+font-family: 'PT Sans Caption', sans-serif;
+font-size: 16px;/* Размер шрифта*/
+line-height: 1.5;/*Высота строчки */	
+}
+img{
+display: inline-block;/* */	
+}
+
+/*Работа в хэдар*/
+  .header{
+ background: #00BFFF;/*фон ХЭДАР */
+ /* Путь к изображению*/
+ background-image: url("pirs.jpg");
+ background-repeat: no-repeat;/* не повтор.фон*/
+ background-position: center;/*выравнивание*/
+ background-size: cover;/*Заполняет весь блок */
+
+ height: 50vh;   /*Высота фона */
+ color: #F0FFFF;  /*Цвет текста*/
+ text-align: center; /*Выравнивание текста*/
+
+  /*Выравнивает в ряд */
+ display: flex;/*Флекс-бокс (хэдар) */
+ flex-direction: column; /*текст в (столб) */
+ align-items: center;    /*Выравнивание по горизантали */
+ justify-content: center;/*Выравнивание по горизантали */
+
+ position: relative;  /*Родительский блок */	
+ }
+
+.header_title { /* */
+font-size: 56px;  /*Размер заголовка */
+margin-bottom: 30px; /*Отступ с низу */
+/*Шрифт (браузер) */
+font-family: 'Roboto', sans-serif;
+ margin-top: -50px;  /*Отступ с верху */
+}
+
+.header_slogan{ 
+font-size: 28px; /*Размер текста*/
+line-height: 42px; /*Высота строчки*/
+}
+
+.header_arrow{ /*Стрелка */
+font-size:48px;/*NO Размер стрелки*/
+width: 60px;/*Ширена блока стрелки */
+height: 1px;/*Высота блока стрелки */
+  margin-left:-30 ;/*NO подвинуть в лево*/
+position: absolute;/*Абсолютное позишен */
+bottom: 100px;/*отступ с низу */
+left:50%;/*Отступ с лево*/
+/*top в (верх); right в (право)*/
+}
+ /*Конец работы*/ 
+
+ /* Работа с cеткой*/
+
+  .container{
+  width: 1140px;/*Ширена конт. */
+  margin-left: auto;/*Отступ с лево*/
+  margin-right: auto;/*Отступ с право  */	
+  }
+   /* Не совместимо с  Нормолай СSS*/
+    /*  .col-4{
+    width: 360px;/*NO Ширена колонки */
+   /*  margin-right: 30px;/*NO Отступы межд.кол. с право  */
+   /*  float: left;	 /*NO Обтикание с лево */
+   /*  }
+
+    /* Не совместимо с  Нормолай СSS*/
+    .col:last-child{  /*NO Выбор посл.кол.*/
+     margin-right: 0px;/*NO Отступ с право*/	
+    }
+     
+    .row:after{ /*NO Сброс обтикания*/
+     clear: both; /*NO Очистить потоки обтек.*/
+     content: ""; /*NO Для after*/
+     display: table; /*NO Коректное отоброжение*/
+     }           
+
+   
+
+  
+      /*конец работы*/ 
+          /* Работа с проек*/
+
+       .title{
+       font-size: 46px;/*Размер заголовка*/
+       margin-bottom: 60px;/*Отступ с низу */
+       /*Шрифт из браузера */
+       font-family:'Roboto', sans-serif ;
+       text-align: center;/*Вырывнивание,центр */	
+       }
+
+       .proekt_td_img{
+       margin-bottom: 17px;/*Отступ с низу */	
+       }
+       .img_fit{
+       width: 100%;/*Ширина картинки */
+       height: 160px;/*Высота картинки */
+       object-fit: cover;/*Обрезание лишнего */	
+       }
+
+      .proekt_td_title{
+      font-size: 24px;/*Размер щрифта */
+      line-height:normal;/*Высота строчки */
+      margin-bottom: 5px;/*Отступ с низу*/	
+      }
+
+       .proekt_td_text{
+       	 font-size: 16px;/*Размер шрифта */
+      line-height:1.5px;/*Высота строчки*/
+       }
+       .proekt{
+       padding-top: 30px;/*Внутрений отст.верх. */
+       padding-bottom: 50px;/*Внутрен.отст.низ */
+       	 background: #00CED1;/*Цвет фона */
+       }
+
+       .proekt-item{
+       	margin-bottom: 20px;/*Отступ сниз. */
+       }
+
+         .proekt_td_title a {/*Декор ссылки */
+         text-decoration: none;/*Убирает подчёркивание */
+         color:#000000;/*Цвет ссылки */
+        /* border-bottom:1px solid #FFFFFF;Нижнее подчёр. */
+         }
+
+       .proekt_td_title  a:hover{/*Навидение */
+      color: #0052C2;/*цвет ссылки */
+     border-color:rgba(0, 82, 194, 0.3);/*Цвет нижнего
+     подчёркивания */ 
+       }
+
+       .proekt_td_text p {
+       	margin-top:0px; /*Отступ с верху */ 
+       	margin-bottom:15px ;/*Отступ с низу */
+       }
+      
+
+   /*конец работы*/ 
+
+   /* футэр*/ 
+
+   .footer{
+   background-color:  #191970 ;/* Цвет фона */
+   color:#6479a2;/* Цвет текста*/
+   padding-top: 90px;/*Отступ верх. блок */
+   padding-bottom: 90px; /*Отступ низ.блок */
+   }
+
+   .footer p {   /*  Выравн.обзаца */
+   margin-top: 0px;/*Отступ верх */
+   margin-bottom: 15px;	/*Отступ низ */
+   }
+   p.footer_name{   /*Заголовок */
+   font-size: 28px;/*Размер заголовка */
+   margin-bottom: 10px;/*Отступ низ */
+   line-height: normal;/*Высота строки */
+   font-family:'Roboto', sans-serif ;/*Шрифт */	
+   }
+
+   p.footer_social{
+   color: #FFFFFF;	/*Цвет текста */
+   }
+
+   p.footer_social-icons{
+   	  color: #FFFFFF;/* NO Цвет иконки*/	
+   	  font-size: 32px;/*NO Размер иконки*/
+   }
+
+   p.footer_social-icons a {   /*NO Меняем цвет ссылки*/	
+   color:#FFFFFF;             /* NO Цвет ссылки*/	
+   text-decoration: none;     /* NO Убираем подчёрк.*/	
+   margin-right: 1px;        /* NO Отступ с право*/	
+   }
+    /* NO Убирает отступ с право*/	
+   p.footer_social-icons a:last-child {
+   	margin-right: 0px;/* NO Отступ право*/	
+   }
+    /* Эфект наведения*/
+    p.footer_social-icons a:hover {
+    color: #ffE400; /* NO Цвет навидения*/
+    }
+
+    .button{      /*Кнопка */
+    font-weight: 700;/*Ширена шрифта */
+    text-decoration: none;/*Убираем подчёркивание */
+    color:#FFFFFF; /*Цвет текст кнопка */
+    text-transform: uppercase;/*Все буквы заглавные */
+    letter-spacing: 1.6px; /*Растояние между букв. */
+
+    display: inline-block;/*Свойство блочного элемента */
+
+    border-width: 2px;/*Ширена рамки */
+    border-color: #FFFFFF; /*Цвет рамки */
+    border-style: solid;/*Прямая линия */
+    border-radius: 50px;/*Округление углов */
+
+    padding-top: 8px;/*Внутр.отст. верх */
+    padding-bottom: 8px;/*Внутр.отст. низ*/
+    padding-left: 23px;/*Внутр.отст. лево*/
+    padding-right: 23px;/*Внутр.отст.право */
+    /*Отступ от кнопки до текста */	
+    margin-bottom: 13px;/*Наружн. отст. низ */
+    }
+    /*Эфект по навидению(меняет цвет) */	
+    .button:hover{
+    color: #061634;/*Цвет текста синий*/
+    background-color: #FFFFFF; /*Цвет фона */	
+    }
+
+
+
+
+
